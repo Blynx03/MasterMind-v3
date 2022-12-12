@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">  <!-- font-family: 'Orbitron', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">  <!-- font-family: 'Edu QLD Beginner', cursive; -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- icon -->
+    <link rel="stylesheet" href="css/level-three.css">
+    <link rel="shortcut icon" href="#">
+    <title>MasterMIND</title>
+</head>
+<body>
+
+    <div class="curtain"></div>
+        <div class="header-container">
+            <div class="title-container">
+                <div class="mastermind master"><em>&nbsp Master &nbsp</em></div>
+                <div class="mastermind mind"><em>&nbsp MIND &nbsp</em></div>
+            </div>
+            <div class="generated-colors-area">
+                <div class="gen-colors-container gc-container" id="gc-cont">
+                    <span class="gen-colors" id="gc1"></span>
+                    <span class="gen-colors" id="gc2"></span>
+                    <span class="gen-colors" id="gc3"></span>
+                    <span class="gen-colors" id="gc4"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-container">
+            <div class="line-container">
+                <div class="choices-container">
+                    <span class="chosen-color choice1 attempt1" text="1">1</span>
+                    <span class="chosen-color choice2 attempt1" text="2">2</span>
+                    <span class="chosen-color choice3 attempt1" text="3">3</span>
+                    <span class="chosen-color choice4 attempt1" text="4">4</span>
+                </div>
+                <div class="feedback-container">
+                    <div class="feedbacks feed1 feedresult1">?</div>
+                    <div class="feedbacks feed2 feedresult1">?</div>
+                    <div class="feedbacks feed3 feedresult1">?</div>
+                    <div class="feedbacks feed4 feedresult1">?</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors-container">
+            <span class="color-choices color1" id="c1" text="red"></span>
+            <span class="color-choices color2" id="c2" text="blue"></span>
+            <span class="color-choices color3" id="c3" text="yellow"></span>
+            <span class="color-choices color4" id="c4" text="purple"></span>
+            <span class="color-choices color5" id="c5" text="aqua"></span>
+            <span class="color-choices color6" id="c6" text="orange"></span>
+        </div>
+
+        <div class="btns-container" id="buttons-container">
+            <button type="button" class="btn main-page-btn" onclick="mainClick()">Main Page</button>
+            <button type="button" class="btn how-to-play-btn" onclick="howToClick()">How To Play</button>
+            <button type="button" class="btn try-again-btn" onclick="tryAgainClick()">Try Again?</button>
+        </div>
+    </div>
+    
+
+    
+    <footer>The Dreamer 2022 
+        <span class="material-symbols-outlined">rocket_launch</span>
+    </footer>
+    
+    <script src="js/level-three.js" type="text/javascript"></script>
+</body>
+</html>
+
+
