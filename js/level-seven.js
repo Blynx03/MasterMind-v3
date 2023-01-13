@@ -120,7 +120,7 @@ const choiceClickSound = new Audio("sound/choiceclick.wav");
 
 function levelTimer(secs) {
     const timerSound = new Audio("sound/timer3.wav");
-    const gameOverSound = new Audio("sound/gameover4.wav");
+    const gameOverSound = new Audio("sound/gameover.wav");
     timerSound.volume = 0.5;
 
     createCountdown();
@@ -608,3 +608,7 @@ function loadNextLevel() {
     window.location.replace("level-eight.html");
 }
 
+// Setting the footer
+let year = new Date().getFullYear();
+const footerNote = document.querySelector("footer");
+footerNote.innerHTML = "The Dreamer " + year + '<span class="material-symbols-outlined">rocket_launch</span>'

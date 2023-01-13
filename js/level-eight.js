@@ -616,3 +616,7 @@ function loadStartOver() {
     window.location.replace("play.html");
 }
 
+// Setting the footer
+let year = new Date().getFullYear();
+const footerNote = document.querySelector("footer");
+footerNote.innerHTML = "The Dreamer " + year + '<span class="material-symbols-outlined">rocket_launch</span>'
