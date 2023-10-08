@@ -43,6 +43,7 @@ To play the Mastermind Game, follow these basic instructions:
    - **Level 7:** Same as Level 6 but with a 2-minute timer.
    - **Level 8:** The most challenging level with a 1-minute timer.
 
+![Alt text](mm-unlock-level.png)
 ## Game Levels
 
 Each level offers a unique challenge, and as you progress to higher levels, the game becomes more demanding.
