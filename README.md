@@ -1,6 +1,6 @@
 # Mastermind Game
 
-Welcome to the Mastermind Game! This command-line program offers a fun and challenging experience as you attempt to crack the secret code. The game consists of different levels, each with its own set of rules and challenges.
+Welcome to the Mastermind Game! This program offers a fun and challenging experience as you attempt to crack the secret code. The game consists of different levels, each with its own set of rules and challenges.
 
 ## Table of Contents
 
