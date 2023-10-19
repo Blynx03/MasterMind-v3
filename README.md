@@ -2,6 +2,8 @@
 
 Welcome to the Mastermind Game! This program offers a fun and challenging experience as you attempt to crack the secret code. The game consists of different levels, each with its own set of rules and challenges.
 
+This interactive command-line program promises a delightful and intellectually stimulating experience as you embark on the journey to decipher the enigmatic code. The game is built using HTML, CSS, vanilla JavaScript, and select libraries. Moreover, the game boasts a responsive design that seamlessly adapts to both portrait and landscape mobile orientations for a versatile gaming experience.
+
 ## Table of Contents
 
 1. Main Page
