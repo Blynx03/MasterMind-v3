@@ -11,6 +11,7 @@ body {
     #86e2a3 100%
   );
   height: 100vh;
+  height: 100svh;
   margin: 0;
   font-size: 1em;
   font-family: "Orbitron", sans-serif;
@@ -232,18 +233,42 @@ body {
 }
 
 footer {
-  position: fixed;
+  width: 100%;
+  position: absolute;
   font-size: 0.75rem;
-  bottom: 5%;
-  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3%;
+  left: 0;
   color: hsl(0, 0%, 90%);
 }
 
+/* rocket icon */
 .material-symbols-outlined {
-  position: absolute;
-  top: -5px;
-  left: 140px;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.rocket-icon {
+  margin-left: 10px;
+}
+
+/* fullscreen icon */
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.fullscreen-icon {
+  visibility: hidden;
+}
+/* exit fullscreen icon */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.exit-fullscreen-icon {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 770px) {
@@ -262,20 +287,45 @@ footer {
   }
 
   footer {
-    left: 38%;
+    width: 100%;
+    position: absolute;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3%;
+    left: 0;
+    color: hsl(0, 0%, 90%);
+  }
+
+  .fullscreen-icon {
+    visibility: visible;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+  }
+
+  .exit-fullscreen-icon {
+    visibility: hidden;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
   }
 }
 
 @media screen and (max-width: 550px) {
   .master {
     font-size: 20vw;
-    transform: scaleY(2.4);
+    transform: scaleY(1.5);
+    left: 10px;
+    margin-top: 44px;
   }
 
   .mind {
     font-size: 20vw;
-    left: 30%;
-    transform: scaleY(2.4);
+    left: 32%;
+    top: 46%;
+    transform: scaleY(1.5);
   }
 
   .btns-container {
@@ -288,6 +338,27 @@ footer {
 
   footer {
     width: 100%;
-    left: 30%;
+    position: absolute;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3%;
+    left: 0;
+    color: hsl(0, 0%, 90%);
+  }
+
+  .fullscreen-icon {
+    visibility: visible;
+    position: fixed;
+    bottom: 3.2%;
+    right: 5%;
+  }
+
+  .exit-fullscreen-icon {
+    visibility: hidden;
+    position: fixed;
+    bottom: 3.2%;
+    right: 5%;
   }
 }

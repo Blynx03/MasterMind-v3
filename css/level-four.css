@@ -42,6 +42,7 @@ body {
   margin: 0;
   font-family: "Orbitron", sans-serif;
   height: 100vh;
+  height: 100svh;
   z-index: -1;
 }
 
@@ -348,6 +349,8 @@ body {
   border-radius: 30px;
   display: grid;
   grid-template-areas: "line1 line5" "line2 line6" "line3 line7" "line4 line8";
+  grid-template-columns: 50%;
+  grid-template-rows: 25%;
   /* grid-gap:20px; */
   visibility: visible;
   overflow: hidden;
@@ -1136,24 +1139,49 @@ body {
 }
 
 footer {
-  position: fixed;
+  width: 100%;
+  position: absolute;
   font-size: 0.75rem;
-  bottom: 5%;
-  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3%;
+  left: 0;
   color: hsl(0, 0%, 90%);
 }
 
+/* rocket icon */
 .material-symbols-outlined {
-  position: absolute;
-  top: -5px;
-  left: 140px;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.rocket-icon {
+  margin-left: 10px;
+}
+
+/* fullscreen icon */
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.fullscreen-icon {
+  visibility: hidden;
+}
+/* exit fullscreen icon */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.exit-fullscreen-icon {
+  visibility: hidden;
 }
 
 /* mobile landscape */
 @media screen and (min-width: 551px) and (max-width: 770px) {
   body {
     height: 100vh;
+    height: 100svh;
     position: relative;
   }
 
@@ -1181,24 +1209,32 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
   }
 
   .mastermind {
-    width: auto;
+    position: absolute;
+    width: 60%;
     height: 100%;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
+    top: 10px;
+  }
+
+  .master em {
     top: 0;
+    left: 0;
   }
 
   .mind {
     width: 40%;
-    left: 55%;
+    left: 46%;
+    z-index: 1;
   }
 
   em {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -1317,10 +1353,10 @@ footer {
     width: 26%;
     height: 26%;
     bottom: -2%;
-    right: 0;
-    align-items: center;
+    right: 10px;
+    align-items: flex-start;
     justify-content: center;
-    gap: 5px;
+    gap: 4px;
   }
 
   .btns-container2 {
@@ -1337,23 +1373,25 @@ footer {
   .main-page-btn,
   .how-to-play-btn {
     height: 30px;
+    letter-spacing: 0;
   }
 
   .btn,
   .btn2 {
-    font-size: 0.8rem;
-    width: 80%;
-    padding: 5% 10%;
+    font-size: 0.75rem;
+    width: 60%;
+    padding: 4% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .btn2 {
-    width: 30%;
+    width: 24%;
     font-size: 0.8rem;
     height: 40px;
     padding: 2% 5%;
+    letter-spacing: 0;
   }
 
   .try-again-btn {
@@ -1390,13 +1428,36 @@ footer {
 
   .readyBtn {
     width: 20%;
+    font-size: 1rem;
   }
 
   footer {
+    width: 100%;
     position: absolute;
-    left: 37%;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 1%;
-    font-size: 0.6rem;
+    left: 0;
+    color: hsl(0, 0%, 90%);
+  }
+
+  .rocket-icon {
+    font-size: 0.9rem;
+  }
+  .fullscreen-icon {
+    visibility: visible;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+  }
+
+  .exit-fullscreen-icon {
+    visibility: hidden;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
   }
 }
 
@@ -1404,8 +1465,11 @@ footer {
 @media screen and (max-width: 550px) {
   body {
     height: 100vh;
+    height: 100svh;
   }
   .curtain {
+    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1415,7 +1479,7 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    height: 22vh;
+    height: 22%;
     position: relative;
   }
 
@@ -1553,14 +1617,18 @@ footer {
 
   .btn {
     font-size: 0.8rem;
-    width: auto;
+    width: 30%;
+    height: 34%;
     padding: 3% 4%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    letter-spacing: 0;
   }
 
   .btn2 {
     font-size: 0.8rem;
+    letter-spacing: 0;
   }
 
   .try-again-btn {
@@ -1592,9 +1660,38 @@ footer {
     justify-content: center;
   }
 
+  .readyBtn {
+    width: 35%;
+    font-size: 1rem;
+  }
+
   footer {
+    width: 100%;
     position: absolute;
-    left: 29%;
-    bottom: 1%;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1.5%;
+    left: 0;
+    color: hsl(0, 0%, 90%);
+  }
+
+  .rocket-icon {
+    font-size: 1rem;
+  }
+
+  .fullscreen-icon {
+    visibility: visible;
+    position: fixed;
+    bottom: 2%;
+    right: 4%;
+  }
+
+  .exit-fullscreen-icon {
+    visibility: hidden;
+    position: fixed;
+    bottom: 2%;
+    right: 4%;
   }
 }

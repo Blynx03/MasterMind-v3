@@ -558,4 +558,4 @@ const footerNote = document.querySelector("footer");
 footerNote.innerHTML =
   "The Dreamer " +
   year +
-  '<span class="material-symbols-outlined">rocket_launch</span>';
+  '<span class="material-symbols-outlined rocket-icon">rocket_launch</span>';
