@@ -1133,6 +1133,7 @@ footer {
 @media screen and (min-width: 551px) and (max-width: 770px) {
   body {
     height: 100vh;
+    height: 100svh;
     position: relative;
   }
 
@@ -1430,7 +1431,7 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    height: 22%;
+    height: 22vh;
     position: relative;
   }
 
@@ -1463,13 +1464,15 @@ footer {
   }
 
   .generated-colors-area {
+    position: absolute;
+    top: 54%;
     width: 90vw;
     display: flex;
     justify-content: center;
   }
 
   .gen-colors-container {
-    width: 70vw;
+    width: 80vw;
     position: static;
     height: 8vh;
     padding: 2%;
